@@ -4,10 +4,10 @@ const button20 = document.getElementById('20')
 // default Grid 16x16 
 function createGrid() {
 for (let i=0;i<256;i++) {
-    var rows = document.createElement('div')
-    rows.classList.add('rows')
-    container.appendChild(rows)
-    rows.addEventListener('mouseover', function() {
+    var cell = document.createElement('div')
+    cell.classList.add('cell')
+    container.appendChild(cell)
+    cell.addEventListener('mouseover', function() {
         this.style.backgroundColor =pageMix();
     })
 }
@@ -21,10 +21,10 @@ function size20() {
     container.style.setProperty('grid-template-columns', 'repeat(20,1fr)')
     container.style.setProperty('grid-template-rows', 'repeat(20,1fr)')
     for (let i=0;i<400;i++) {
-        var rows = document.createElement('div')
-        rows.classList.add('rows')
-        container.appendChild(rows)
-        rows.addEventListener('mouseover', function() {
+        var cell = document.createElement('div')
+        cell.classList.add('cell')
+        container.appendChild(cell)
+        cell.addEventListener('mouseover', function() {
             this.style.backgroundColor =pageMix();
         })
     }}
@@ -34,10 +34,10 @@ function size20() {
         container.style.setProperty('grid-template-columns' , 'repeat(16,1fr')
         container.style.setProperty('grid-template-rows', 'repeat(16,1fr')
         for ( let i=0;i<256; i++) {
-            var rows = document.createElement('div')
-            rows.classList.add('rows')
-            container.appendChild(rows)
-            rows.addEventListener('mouseover',function(){
+            var cell = document.createElement('div')
+            cell.classList.add('cell')
+            container.appendChild(cell)
+            cell.addEventListener('mouseover',function(){
                 this.style.backgroundColor=pageMix();
             })
         }
@@ -48,10 +48,10 @@ function size20() {
         container.style.setProperty('grid-template-columns' , 'repeat(10,1fr')
         container.style.setProperty('grid-template-rows', 'repeat(10,1fr')
         for ( let i=0;i<100; i++) {
-            var rows = document.createElement('div')
-            rows.classList.add('rows')
-            container.appendChild(rows)
-            rows.addEventListener('mouseover',function(){
+            var cell = document.createElement('div')
+            cell.classList.add('cell')
+            container.appendChild(cell)
+            cell.addEventListener('mouseover',function(){
                 this.style.backgroundColor=pageMix();
             })
         }
@@ -62,10 +62,10 @@ function size20() {
         container.style.setProperty('grid-template-columns' , 'repeat(5,1fr')
         container.style.setProperty('grid-template-rows', 'repeat(5,1fr')
         for ( let i=0;i<25; i++) {
-            var rows = document.createElement('div')
-            rows.classList.add('rows')
-            container.appendChild(rows)
-            rows.addEventListener('mouseover',function(){
+            var cell = document.createElement('div')
+            cell.classList.add('cell')
+            container.appendChild(cell)
+            cell.addEventListener('mouseover',function(){
                 this.style.backgroundColor=pageMix();
             })
         }

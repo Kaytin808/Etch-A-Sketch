@@ -22,7 +22,7 @@ body {
     grid-template-rows: repeat(16,1fr);
     background-color: white;
 }
-.rows {
+.cell {
     border:1px solid rgb(0, 0, 0);  
 }
 @font-face {
@@ -33,9 +33,10 @@ body {
       font-family: etchfont;
       font-size: 100px;
       margin-left: 44rem;
+      background-clip: unset;
       background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(255, 237, 77));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
       
   }
 button {
