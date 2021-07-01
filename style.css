@@ -1,0 +1,64 @@
+body {
+    background-color: #1fc8db;
+    background-image: linear-gradient(
+      140deg,
+      #f0be8f 0%,
+      #40b3c2 50%,
+      #f0b763 90%
+    );
+    color: white;
+    opacity: 0.95;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+#grid {
+    display: grid;
+    margin-left: 42rem;
+    margin-top: 100px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    background-color: white;
+}
+.rows {
+    border:1px solid rgb(0, 0, 0);  
+}
+@font-face {
+    font-family: etchfont;
+    src: url(Florida\ Orange.ttf);
+  }
+  h1 {
+      font-family: etchfont;
+      font-size: 100px;
+      margin-left: 44rem;
+      background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(255, 237, 77));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      
+  }
+button {
+    display: block;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+}
+button:hover {
+    background-position: right center;
+}
+.btns {
+    float: right;
+    margin-right: 36rem;
+    margin-top: 15em;
+
+}
