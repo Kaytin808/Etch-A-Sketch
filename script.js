@@ -1,6 +1,5 @@
 const container = document.getElementById('grid');
-const button10 = document.getElementById('10')
-const button20 = document.getElementById('20')
+
 // default Grid 16x16 
 function createGrid() {
 for (let i=0;i<256;i++) {
@@ -28,6 +27,20 @@ function size20() {
             this.style.backgroundColor =pageMix();
         })
     }}
+    // Reset button with prompt //
+    function reset() {
+       var userInput =prompt('Choose a value between 1-64')
+            container.innerHTML ="";
+            container.style.setProperty('grid-template-columns', `repeat(${userInput},1fr)`)
+            container.style.setProperty('grid-template-rows', `repeat(${userInput},1fr)`)
+            for (let i=0; i< userInput*userInput;i++) {
+            var cell = document.createElement('div');
+            cell.classList.add('cell');
+            container.appendChild(cell)
+            cell.addEventListener('mouseover', function() {
+                this.style.backgroundColor =pageMix();
+    }
+            )}}
     // size 16x16 grid
     function size16() {
         container.innerHTML="";
