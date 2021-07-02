@@ -39,6 +39,18 @@ body {
     -webkit-text-fill-color: transparent;
       
   }
+  h2 {
+    text-align: center;
+    font-family: etchfont;
+    font-style: italic;
+    margin-top: 10em;
+    margin-right: 50px;
+    background-clip: unset;
+      background: -webkit-linear-gradient(rgb(0, 238, 255), rgb(255, 237, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      
+  }
 button {
     display: block;
     background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
