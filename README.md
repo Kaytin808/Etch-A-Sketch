@@ -9,4 +9,4 @@ Things I have learned~
 
 Live preview : https://kaytin808.github.io/Etch-A-Sketch/
 
-![EtchaSketch]("https://i.ibb.co/1bsML55/Untitled.png")
+![EtchaSketch](https://i.ibb.co/1bsML55/Untitled.png)
